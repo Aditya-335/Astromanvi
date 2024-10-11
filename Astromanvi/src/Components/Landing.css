@@ -20,6 +20,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  
 }
 
 .logo{
@@ -105,8 +106,8 @@
   }
   
   .horoscope-img {
-    width: 1200px; /* Maintain a square size to keep the circle shape */
-    height: 1200px;
+    width: 800px; /* Maintain a square size to keep the circle shape */
+    height: 800px;
     margin-top: 20vh;
     
     border-radius: 50%; /* Keep the circle shape */
@@ -131,8 +132,8 @@
   /* Optional: Set the transform origin to the center of the image */
   .horoscope-container {
     position: absolute;
-    right: -300px;
-    top: 80%;
+    right: 100px;
+    top: 50%;
     transform: translateY(-50%);
     transform-origin: center; /* Ensure rotation happens from the center */
   }
