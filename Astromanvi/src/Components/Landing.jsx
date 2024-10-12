@@ -1,5 +1,6 @@
 import React from 'react';
 import './Landing.css';
+import { Link } from 'react-router-dom';
 import starsBackground from '../assets/stars1.jpg';
 import horoscopeCircle from '../assets/chart.png';
 
@@ -8,7 +9,7 @@ const LandingPage = () => {
         <>
     <div className="landing-container">
       <nav className="navbar">
-        <h1 className='logo'>ASTROMANVI</h1> 
+        <h1 className='sitelogo'>ASTROMANVI</h1> 
         <ul className="nav-links">
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
