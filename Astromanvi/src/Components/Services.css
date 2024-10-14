@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400&display=swap');
 
 .services-container {
-  background-image: url('../assets/stars1.jpg');
+  /* background-image: url('../assets/stars1.jpg'); */
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 40px 20px;
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .services-container h1 {
   font-family: 'Cinzel', serif;
   font-size: 48px;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -20,7 +21,7 @@
 .subtitle {
   font-family: 'Montserrat';
   font-size: 18px;
-  color: #cccccc;
+  color: #000000;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -34,7 +35,7 @@
 }
 
 .service-card {
-  background-color: white;
+  background-color: rgb(248, 245, 250);
   border: 5px solid #D4AF37;
   border-radius: 10px;
   padding: 20px;
@@ -60,7 +61,7 @@
   font-family: 'Montserrat';
   font-size: 24px;
   font-weight:bolder;
-  color: #00008b;
+  color: #060008;
   margin-bottom: 10px;
 }
 

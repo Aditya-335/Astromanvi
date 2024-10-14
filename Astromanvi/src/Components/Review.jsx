@@ -1,5 +1,8 @@
 import React from 'react';
 import './Review.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const TestimonialCard = ({ stars, text, name }) => (
   <div className="testimonial-card">
@@ -10,21 +13,72 @@ const TestimonialCard = ({ stars, text, name }) => (
 );
 
 const Review = () => {
+
+  const settings ={
+    className:"testimonials",
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay:true,
+    adaptiveHeight: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          waitForAnimate: false
+        }
+      }
+    ]
+  };
+
   const testimonials = [
-    { stars: 5, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 5, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 5, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 5, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
+    { stars: 5, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,dictum interdum,", name: "Name" },
+    { stars: 4, text: " nulla et dictum interdum,", name: "Name" },
+    { stars: 3, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
+    { stars: 2, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
+    { stars: 1, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
+    { stars: 4, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
+    { stars: 3, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
+    { stars: 4, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
   ];
 
   return (
     <div className="review-container">
       <h1 className='review-heading'>WHAT OUR CUSTOMERS SAY</h1>
       <div className="testimonials">
-        {testimonials.map((testimonial, index) => (
-          <TestimonialCard key={index} {...testimonial} />
-        ))}
+        
+        <Slider {...settings}>
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
+          ))}
+        </Slider>
+        
+        
       </div>
+      
       <footer>
         <div className="logo">
           <span className="logo-icon">88</span>

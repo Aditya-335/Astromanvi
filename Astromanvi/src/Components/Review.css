@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400&display=swap');
 
 .review-container {
-    background-image: url('../assets/stars1.jpg');
+    /* background-image: url('../assets/stars1.jpg'); */
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Arial', sans-serif;
     /* padding: 2rem; */
+    background-color: #f7f7f7;
   }
   
   .review-heading {
@@ -18,10 +19,9 @@
   }
   
   .testimonials {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
+    gap: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   .testimonial-card {
@@ -29,7 +29,8 @@
     color: #333;
     padding: 1.5rem;
     border-radius: 10px;
-    width: calc(25% - 1rem);
+    width: 580px;
+    height: 250px;;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
@@ -47,6 +48,7 @@
   .name {
     text-align: right;
     font-weight: bold;
+    
   }
   
   footer {
@@ -115,6 +117,7 @@
   @media (max-width: 768px) {
     .testimonial-card {
       width: 100%;
+      height: 350px;
     }
   
     .footer-links {
