@@ -42,7 +42,7 @@ const ContactUs = () => {
           <button type="submit" className="submit-btn">Join Us</button>
         </form>
       </div>
-      <div className="destiny-info">
+      {/* <div className="destiny-info">
         <h1>Destiny Awaits</h1>
         <div className="zodiac-icons">
           <span className="icon">♋</span>
@@ -56,7 +56,7 @@ const ContactUs = () => {
           Sun. Known for their confidence, creativity, and generosity, Leos are
           natural leaders who thrive in the spotlight.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
