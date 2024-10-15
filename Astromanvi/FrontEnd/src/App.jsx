@@ -15,16 +15,6 @@ function App() {
     <ContactUs/>
     <Review/>
 
-    {/* <Router>
-      <Routes>
-        <Route path="/" element={<Landing/>} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/Review" element={<Review />} />
-
-      </Routes>
-    </Router> */}
     </>
   )
 }

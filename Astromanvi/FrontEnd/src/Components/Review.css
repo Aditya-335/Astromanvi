@@ -19,20 +19,24 @@
   }
   
   .testimonials {
-    gap: 4px;
+    gap: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    
   }
   
+  
+
   .testimonial-card {
     background-color: white;
     color: #333;
     padding: 1.5rem;
     border-radius: 10px;
-    width: 580px;
     height: 250px;;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  
   
   .stars {
     color: gold;
@@ -55,7 +59,6 @@
     margin-top: 4rem;
     background-color: #1a1a1a;
     padding:0;
-    border-radius: 10px;
     
   }
   
