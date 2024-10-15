@@ -19,15 +19,17 @@ const Services = () => {
   });
 
   return (
-    <div className="services-container">
-      <h1>OUR SERVICES</h1>
-      <p className="subtitle">Discover Your Path with Our Expert Astrology Services</p>
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
-        ))}
+    <section id="services">
+      <div className="services-container">
+        <h1>OUR SERVICES</h1>
+        <p className="subtitle">Discover Your Path with Our Expert Astrology Services</p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
