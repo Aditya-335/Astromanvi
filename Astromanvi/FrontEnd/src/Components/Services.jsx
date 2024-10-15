@@ -8,6 +8,7 @@ const ServiceCard = ({ title, icon, description, details, actionText }) => {
   const handleFlip = () => setIsFlipped(!isFlipped);
 
   return (
+    
     <div className={`service-card ${isFlipped ? 'flipped' : ''}`}>
       <div className="card-inner">
         <div className="card-front">
@@ -62,15 +63,17 @@ const Services = () => {
   ];
 
   return (
-    <div className="services-container">
-      <h1>Our Mystical Services</h1>
-      <p className="subtitle">Unlock the Secrets of the Universe</p>
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
-        ))}
+    <section id='services'>
+      <div className="services-container">
+        <h1>Our Mystical Services</h1>
+        <p className="subtitle">Unlock the Secrets of the Universe</p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <ServiceCard key={index} {...service} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
