@@ -1,6 +1,6 @@
 const expressAsyncHandler = require("express-async-handler");
 const dotenv = require("dotenv");
-const nodemailer =require("nodemailer");
+const nodemailer = require("nodemailer");
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
@@ -14,34 +14,30 @@ const transporter = nodemailer.createTransport({
 })
 
 const sendMail = expressAsyncHandler(async (req, res) => {
-    const {name, dob, phone, email } = req.body;
-    console.log(`Name: ${name}, DOB: ${dob}, Email: ${email}, Phone: ${phone}`);
+    const { name, dobWithTime, birthPlace, phone, email } = req.body; // Extracting dobWithTime and birthPlace
+    console.log(`Name: ${name}, DOB with Time: ${dobWithTime}, Birth Place: ${birthPlace}, Email: ${email}, Phone: ${phone}`);
 
     res.status(200).json({ message: "Form data received successfully!" });
     
-    var mailOptions ={
-        from:process.env.SMTP_MAIL,
-        to:process.env.TO_EMAIL,
-        subject:"New Lead Information",
-        text: `Name: ${name}\nDOB: ${dob}\nEmail: ${email}\nPhone: ${phone}`,  // Plain text version
+    var mailOptions = {
+        from: process.env.SMTP_MAIL,
+        to: process.env.TO_EMAIL,
+        subject: "New Lead Information",
+        text: `Name: ${name}\nDOB with Time: ${dobWithTime}\nBirth Place: ${birthPlace}\nEmail: ${email}\nPhone: ${phone}`,  // Plain text version
         html: `<p><strong>Name:</strong> ${name}</p>
-               <p><strong>DOB:</strong> ${dob}</p>
+               <p><strong>DOB with Time:</strong> ${dobWithTime}</p>
+               <p><strong>Birth Place:</strong> ${birthPlace}</p>
                <p><strong>Email:</strong> ${email}</p>
                <p><strong>Phone:</strong> ${phone}</p>` // HTML version
     };
 
     transporter.sendMail(mailOptions, function(error, info){
-        if(error){
+        if (error) {
             console.log(error);
-        }else{
-            console.log("Email send succesfully");
+        } else {
+            console.log("Email sent successfully");
         }
-    })
+    });
 })
-
-
-// const sendMail = async(req, res) => {
-//     res.send("I am sending mail");
-// };
 
 module.exports = sendMail;

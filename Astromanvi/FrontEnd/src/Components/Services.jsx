@@ -40,26 +40,48 @@ const Services = () => {
   const services = [
     {
       title: 'Tarot Reading',
-      icon: '🃏',
+      icon: <img src='https://cdn-icons-png.flaticon.com/128/5019/5019983.png'></img>,
       description: 'Discover insights about your past, present, and future.',
       details: 'Our expert tarot readers use ancient wisdom and modern insights to provide you with accurate and insightful readings. Whether you\'re seeking guidance on love, career, or personal growth, our tarot services can illuminate your path forward.',
       actionText: 'Book a Reading'
     },
     {
-      title: 'Astrology Chart',
-      icon: '🌠',
-      description: 'Understand how celestial bodies influence your life.',
-      details: 'Get a personalized astrological chart that maps the positions of planets and stars at the time of your birth. Our astrologers will interpret this cosmic snapshot to provide deep insights into your personality, strengths, challenges, and life path.',
-      actionText: 'Create Your Chart'
+      title: 'Maa Durga Healing',
+      icon: <img src='https://cdn-icons-png.flaticon.com/128/4086/4086544.png'></img> ,
+      description: 'Heal your soul with divine blessings and spiritual energy.',
+      details: 'Experience the powerful blessings of Maa Durga to cleanse negative energy and restore balance in your life. Our spiritual healing sessions focus on channeling divine energy to help you overcome personal obstacles and connect with your higher self.',
+      actionText: 'Start Your Healing'
     },
     {
-      title: 'Numerology Analysis',
-      icon: '🔢',
+      title: 'Spiritual Counselling',
+      icon: <img src='https://cdn-icons-png.flaticon.com/128/8795/8795859.png'></img>,
+      description: 'Find peace and clarity through spiritual guidance.',
+      details: 'Our spiritual counsellors offer personalized guidance to help you navigate life’s challenges. Whether you’re dealing with emotional stress, difficult decisions, or seeking deeper meaning, we provide support to help you find clarity and inner peace.',
+      actionText: 'Get Counselling'
+    },
+    {
+      title: 'Crystal Therapy',
+      icon: <img src='https://cdn-icons-png.flaticon.com/128/6577/6577788.png'></img>,
+      description: 'Harness the healing power of crystals.',
+      details: 'Crystals are known for their ability to heal, protect, and energize. Our crystal therapists will help you understand the properties of various crystals and how to use them to improve your mental, emotional, and physical well-being.',
+      actionText: 'Start Crystal Healing'
+    },
+    {
+      title: 'Numerology',
+      icon: <img src='https://cdn-icons-png.flaticon.com/128/6766/6766640.png'></img>,
       description: 'Uncover the hidden meanings in your life\'s numbers.',
-      details: 'Numbers carry vibrations that can reveal much about your life purpose, talents, and challenges. Our numerology experts will analyze your name and birth date to provide a comprehensive numerological profile that can guide your decisions and personal growth.',
+      details: 'Numbers carry vibrations that reveal insights into your life purpose, talents, and challenges. Our numerology experts will analyze your name and birth date to provide a comprehensive numerological profile, guiding your decisions and personal growth.',
       actionText: 'Get Your Analysis'
     },
-    // Add more services as needed
+    {
+      title: 'Vastu Consultancy',
+      icon: <img src='https://cdn-icons-png.flaticon.com/128/2144/2144772.png' alt='Vastu Consultancy Icon' />,
+      description: 'Harmonize your living space with ancient Vastu principles.',
+      details: 'Our Vastu experts provide personalized consultations to help you align your home or workspace with the natural forces of the universe. Discover how the layout and energy flow of your environment can impact your health, wealth, and happiness.',
+      actionText: 'Book a Consultation'
+    }
+    
+    
   ];
 
   return (
