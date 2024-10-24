@@ -13,7 +13,6 @@
   color: #000000;
   text-align: center;
   margin-bottom: 10px;
-  /* text-shadow: 0 0 10px rgba(233, 69, 96, 0.5); */
 }
 
 .subtitle {
@@ -47,7 +46,6 @@
   transform-style: preserve-3d;
   border: 5px solid #D4AF37;
   border-radius: 10px;
-
 }
 
 .service-card.flipped .card-inner {
@@ -66,6 +64,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 .card-front {
@@ -94,6 +93,8 @@
   font-size: 16px;
   color: #000000;
   margin-bottom: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .flip-button, .action-button {
@@ -109,6 +110,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  margin: 10px 0;
 }
 
 .flip-button {
@@ -131,11 +133,40 @@
 }
 
 @media (max-width: 768px) {
+  .services-container h1 {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .service-card {
-    height: 350px;
+    height: 380px;
+  }
+
+  .card-front, .card-back {
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    max-height: 150px;
+  }
+
+  .flip-button, .action-button {
+    padding: 8px 16px;
+    font-size: 13px;
+    margin: 8px 0;
   }
 }

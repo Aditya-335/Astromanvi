@@ -1,8 +1,9 @@
 import React from 'react';
 import './Review.css';
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 
 const TestimonialCard = ({ stars, text, name }) => (
   <div className="testimonial-card">
@@ -13,16 +14,15 @@ const TestimonialCard = ({ stars, text, name }) => (
 );
 
 const Review = () => {
-
-  const settings ={
-    className:"testimonials",
+  const settings = {
+    className: "testimonials",
     dots: false,
     infinite: true,
     speed: 500,
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay:true,
+    autoplay: true,
     adaptiveHeight: true,
     autoplaySpeed: 3000,
     responsive: [
@@ -71,57 +71,46 @@ const Review = () => {
       <div className="review-container">
         <h1 className='review-heading'>WHAT OUR CUSTOMERS SAY</h1>
         <div className="testimonials">
-          
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}
           </Slider>
-          
-          
         </div>
         
-        <footer>
-          <div className="logo">
-            <span className="logo-icon">88</span>
+        <footer className="contact-footer">
+          <div className="footer-content">
+            <div className="company-info">
+              <h2 className="company-name">Astromanvi</h2>
+              <address className="company-address">
+                123 Spiritual Avenue<br />
+                Mystic Valley, MV 12345
+              </address>
+            </div>
+            
+            <div className="contact-info">
+              <div className="contact-item">
+                <Phone size={18} />
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div className="contact-item">
+                <Mail size={18} />
+                <span>contact@mysticalservices.com</span>
+              </div>
+            </div>
+
+            <div className="social-links">
+              <a href="#" aria-label="Facebook">
+                <Facebook size={24} />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <Instagram size={24} />
+              </a>
+            </div>
           </div>
-          <div className="social-icons">
-            <a href="#" className="icon-x">𝕏</a>
-            <a href="#" className="icon-instagram">Ⓘ</a>
-            <a href="#" className="icon-youtube">▶</a>
-            <a href="#" className="icon-linkedin">ℹ</a>
-          </div>
-          <div className="footer-links">
-            <div className="link-column">
-              <h3>Use cases</h3>
-              <a href="#">UI design</a>
-              <a href="#">UX design</a>
-              <a href="#">Wireframing</a>
-              <a href="#">Diagramming</a>
-              <a href="#">Brainstorming</a>
-              <a href="#">Online whiteboard</a>
-              <a href="#">Team collaboration</a>
-            </div>
-            <div className="link-column">
-              <h3>Explore</h3>
-              <a href="#">Design</a>
-              <a href="#">Prototyping</a>
-              <a href="#">Development features</a>
-              <a href="#">Design systems</a>
-              <a href="#">Collaboration features</a>
-              <a href="#">Design process</a>
-              <a href="#">FigJam</a>
-            </div>
-            <div className="link-column">
-              <h3>Resources</h3>
-              <a href="#">Blog</a>
-              <a href="#">Best practices</a>
-              <a href="#">Colors</a>
-              <a href="#">Color wheel</a>
-              <a href="#">Support</a>
-              <a href="#">Developers</a>
-              <a href="#">Resource library</a>
-            </div>
+          
+          <div className="footer-bottom">
+            <p>&copy; 2024 Astromanvi Services. All rights reserved.</p>
           </div>
         </footer>
       </div>
