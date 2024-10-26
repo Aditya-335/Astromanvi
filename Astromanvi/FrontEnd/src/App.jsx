@@ -5,7 +5,6 @@ import AboutUs from './Components/AboutUs'
 import Services from './Components/Services'
 import ContactUs from './Components/ContactUs'
 import Review from './Components/Review'
-import Info from './Components/Info';
 function App() {
 
   return (
@@ -14,7 +13,6 @@ function App() {
     <AboutUs/>
     <Services/>
     <ContactUs/>
-    <Info/>
     <Review/>
 
     </>

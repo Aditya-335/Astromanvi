@@ -68,7 +68,7 @@ const ContactUs = () => {
                 <input type="tel" id="contactNumber" name="contactNumber" placeholder="+91" onChange={(e) => setPhone(e.target.value)} required />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email*</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Value" onChange={(e) => setEmail(e.target.value)} required />
               </div>
               <button type="submit" className="submit-btn">Join Us</button>
