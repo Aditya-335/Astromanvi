@@ -1,0 +1,176 @@
+.container {
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(135deg, #2d1b69 0%, #472b93 100%);
+}
+
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 600px;
+}
+
+.sign-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-content {
+  width: 100%;
+  text-align: center;
+}
+
+.zodiac-symbol {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.zodiac-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.zodiac-dates {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.zodiac-element {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.horoscope-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sign-section {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .zodiac-symbol {
+    font-size: 6rem;
+  }
+
+  .zodiac-name {
+    font-size: 3rem;
+  }
+}
+
+/* Smooth transitions */
+.zodiac-symbol,
+.zodiac-name,
+.zodiac-dates,
+.zodiac-element,
+.horoscope-text {
+  transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+.nav-button:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Ensure text remains readable on glass background */
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
