@@ -1,6 +1,7 @@
 import React from 'react';
 import './Review.css';
 import Slider from "react-slick";
+import address from "../assets/address.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
@@ -56,15 +57,17 @@ const Review = () => {
   };
 
   const testimonials = [
-    { stars: 5, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,dictum interdum,", name: "Name" },
-    { stars: 4, text: " nulla et dictum interdum,", name: "Name" },
-    { stars: 3, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 2, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 1, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 4, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 3, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-    { stars: 4, text: "Lorem ipsum dolor sit amet, consectur adipicing elit. ellus imperdiet, nulla et dictum interdum,", name: "Name" },
-  ];
+    { stars: 5, text: "Astrologer Shekhar's guidance has brought immense clarity to my life. I am now more confident about my decisions. Highly recommend!", name: "Prathamesh Kadam" },
+    { stars: 4, text: "Very insightful readings. He understood my concerns and provided practical advice. Truly grateful!", name: "Ananya Singh" },
+    { stars: 5, text: "An amazing experience! His guidance has helped me immensely in both my personal and professional life.", name: "Meera Nair" },
+    { stars: 4, text: "Shekhar Ji’s insights were very valuable to me. It gave me a fresh perspective on my career.", name: "Kavya Desai" },
+    { stars: 5, text: "I was so impressed by his accuracy and the depth of his readings. Would definitely recommend to others!", name: "Arjun Bhatia" },
+    { stars: 4, text: "A wonderful experience! His predictions were accurate and helped me focus on my goals.", name: "Rina Sharma" },
+    { stars: 5, text: "Astrologer Shekhar's advice has truly changed my outlook. I feel so much more at peace and focused.", name: "Devika Chawla" },
+    { stars: 4, text: "Very insightful session! The advice I received was practical and truly resonated with my life.", name: "Rahul Joshi" },
+];
+
+
 
   return (
     <section id="reviews">
@@ -83,19 +86,21 @@ const Review = () => {
             <div className="company-info">
               <h2 className="company-name">Astromanvi</h2>
               <address className="company-address">
-                123 Spiritual Avenue<br />
-                Mystic Valley, MV 12345
+                D-16 Eastern Court Condominium<br />
+                BT Kawade Rd , 411001
+
               </address>
+              <a href="https://www.google.com/maps/place/Eastern+Court+Condominium/@18.5271171,73.9056251,17.9z/data=!4m6!3m5!1s0x3bc2c1a40e16ef27:0x85c691da9906cf8a!8m2!3d18.5273041!4d73.9059147!16s%2Fg%2F1z3t9vc3f?authuser=0&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"><img src={address} alt="" height="200px"/></a>
             </div>
             
             <div className="contact-info">
               <div className="contact-item">
                 <Phone size={18} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9022778286</span>
               </div>
               <div className="contact-item">
                 <Mail size={18} />
-                <span>contact@mysticalservices.com</span>
+                <span>shekharmanvi@hotmail.com</span>
               </div>
             </div>
 
@@ -103,7 +108,7 @@ const Review = () => {
               <a href="#" aria-label="Facebook">
                 <Facebook size={24} />
               </a>
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com/astromanvi?igsh=YWI0MXpqcmR3Mzhj" aria-label="Instagram">
                 <Instagram size={24} />
               </a>
             </div>

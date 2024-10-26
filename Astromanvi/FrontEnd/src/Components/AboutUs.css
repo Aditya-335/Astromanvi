@@ -20,11 +20,14 @@
   }
 
   .image-placeholder {
-    background-color: #000000;
+    background:url("https://www.geo.tv/assets/uploads/updates/2024-09-29/566439_9845920_updates.jpg");
     border-radius: 50%;
     height: 500px;
     min-width: 500px;
     margin-right: 40px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
   }
 
   .text-content {
