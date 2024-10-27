@@ -5,6 +5,7 @@ import AboutUs from './Components/AboutUs'
 import Services from './Components/Services'
 import ContactUs from './Components/ContactUs'
 import Review from './Components/Review'
+import Parallax from './Components/Parallax'
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
     <AboutUs/>
     <Services/>
     <ContactUs/>
+    <Parallax/>
     <Review/>
 
     </>
