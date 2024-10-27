@@ -48,7 +48,7 @@ const ContactUs = () => {
           </div>
         ) : (
           <div className="contact-form">
-            <h2>Connect with Us</h2>
+            <h2>Book an Appointment</h2>
             <p>Connect with the stars and unveil your destiny</p>
             <form onSubmit={sendEmail}>
               <div className="form-group">
@@ -71,7 +71,7 @@ const ContactUs = () => {
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Value" onChange={(e) => setEmail(e.target.value)} required />
               </div>
-              <button type="submit" className="submit-btn">Join Us</button>
+              <button type="submit" className="submit-btn">Book</button>
             </form>
           </div>
         )}
