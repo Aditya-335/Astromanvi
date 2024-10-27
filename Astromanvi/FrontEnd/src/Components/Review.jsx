@@ -61,7 +61,7 @@ const Review = () => {
     { stars: 5, text: "I had consulted with Astrologer Shekhar and I found him very authentic and geniune. His guidance in astrology and vastu has brought immense change and clarity to my life. Highly recommend!", name: "Renuka Sharma" },
     { stars: 4, text: "Very insightful readings. He understood my concerns and provided practical advice. Truly grateful!", name: "Ananya Singh" },
     { stars: 5, text: "An amazing experience! Shekhar ji is very knowledgable in numerology and vastu. He said so many things that resonated with me and I am glad I spoke to him.", name: "Ravi Nair" },
-    { stars: 4, text: "Shekhar Ji’s insights were very valuable to me. It gave me a fresh perspective on my career.  I highly recommend Shekhar Ji for anyone looking for genuine, thoughtful guidance in astrology.", name: "Kavya Desai" },
+    { stars: 4, text: "Shekhar Ji’s insights were very valuable to me. It gave me a fresh perspective on my career. I highly recommend Shekhar Ji for anyone looking for genuine guidance.", name: "Kavya Desai" },
     { stars: 5, text: "I was so impressed by his accuracy and the depth of his readings. Would definitely recommend to others!", name: "Arjun Bhatia" },
     { stars: 4, text: "Shekhar Ji guided us before marriage, and two years later, we still seek his advice whenever life presents challenges. Recently, his Vastu insights were invaluable as we bought our new home.", name: "Mayur Mane" },
     { stars: 5, text: "Astrologer Shekhar's advice has truly changed my outlook. I feel so much more at peace and focused.", name: "Devika Chawla" },
