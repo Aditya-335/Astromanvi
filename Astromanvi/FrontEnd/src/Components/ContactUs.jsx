@@ -15,7 +15,7 @@ const ContactUs = () => {
     let dataSend = {
       name: name,
       email: email,
-      dobWithTime: dobWithTime, // Combined DOB and Time
+      dobWithTime: dobWithTime, 
       birthPlace: birthPlace,
       phone: phone,
     };

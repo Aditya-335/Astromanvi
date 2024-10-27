@@ -4,11 +4,12 @@ import Slider from "react-slick";
 import address from "../assets/address.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import quote from "../assets/quote.png"
 import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 
 const TestimonialCard = ({ stars, text, name }) => (
   <div className="testimonial-card">
-    <div className="stars">{'★'.repeat(stars)}</div>
+    <div className="stars"><img src={quote} height='20px'></img></div>
     <blockquote>`{text}`</blockquote>
     <p className="name">-- {name}</p>
   </div>
@@ -57,14 +58,14 @@ const Review = () => {
   };
 
   const testimonials = [
-    { stars: 5, text: "Astrologer Shekhar's guidance has brought immense clarity to my life. I am now more confident about my decisions. Highly recommend!", name: "Prathamesh Kadam" },
+    { stars: 5, text: "I had consulted with Astrologer Shekhar and I found him very authentic and geniune. His guidance in astrology and vastu has brought immense change and clarity to my life. Highly recommend!", name: "Renuka Sharma" },
     { stars: 4, text: "Very insightful readings. He understood my concerns and provided practical advice. Truly grateful!", name: "Ananya Singh" },
-    { stars: 5, text: "An amazing experience! His guidance has helped me immensely in both my personal and professional life.", name: "Meera Nair" },
-    { stars: 4, text: "Shekhar Ji’s insights were very valuable to me. It gave me a fresh perspective on my career.", name: "Kavya Desai" },
+    { stars: 5, text: "An amazing experience! Shekhar ji is very knowledgable in numerology and vastu. He said so many things that resonated with me and I am glad I spoke to him.", name: "Ravi Nair" },
+    { stars: 4, text: "Shekhar Ji’s insights were very valuable to me. It gave me a fresh perspective on my career.  I highly recommend Shekhar Ji for anyone looking for genuine, thoughtful guidance in astrology.", name: "Kavya Desai" },
     { stars: 5, text: "I was so impressed by his accuracy and the depth of his readings. Would definitely recommend to others!", name: "Arjun Bhatia" },
-    { stars: 4, text: "A wonderful experience! His predictions were accurate and helped me focus on my goals.", name: "Rina Sharma" },
+    { stars: 4, text: "Shekhar Ji guided us before marriage, and two years later, we still seek his advice whenever life presents challenges. Recently, his Vastu insights were invaluable as we bought our new home.", name: "Mayur Mane" },
     { stars: 5, text: "Astrologer Shekhar's advice has truly changed my outlook. I feel so much more at peace and focused.", name: "Devika Chawla" },
-    { stars: 4, text: "Very insightful session! The advice I received was practical and truly resonated with my life.", name: "Rahul Joshi" },
+    // { stars: 4, text: "Very insightful session! The advice I received was practical and truly resonated with my life.", name: "Rahul Joshi" },
 ];
 
 
