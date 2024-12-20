@@ -65,7 +65,6 @@ const Review = () => {
     { stars: 5, text: "I was so impressed by his accuracy and the depth of his readings. Would definitely recommend to others!", name: "Arjun Bhatia" },
     { stars: 4, text: "Shekhar Ji guided us before marriage, and two years later, we still seek his advice whenever life presents challenges. Recently, his Vastu insights were invaluable as we bought our new home.", name: "Mayur Mane" },
     { stars: 5, text: "Astrologer Shekhar's advice has truly changed my outlook. I feel so much more at peace and focused.", name: "Devika Chawla" },
-    // { stars: 4, text: "Very insightful session! The advice I received was practical and truly resonated with my life.", name: "Rahul Joshi" },
 ];
 
 
