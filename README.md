@@ -13,7 +13,7 @@ Astromanvi is a portfolio website designed for a professional astrologer to expa
 ## Tech Stack
 
 - **Frontend**: React, JSX, Tailwind CSS
-
+- **Backend**: Node.js
 - **Deployment**: Vercel 
 
 ## Services Offered
